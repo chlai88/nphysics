@@ -7,6 +7,9 @@ authors = [ "Sébastien Crozet <developer@crozet.re>" ]
 features = [ "3df32" ]
 path = ".."
 
+[dependencies]
+rand = "*"
+
 [dependencies.nalgebra]
 git = "https://github.com/sebcrozet/nalgebra"
 

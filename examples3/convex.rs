@@ -2,8 +2,9 @@ extern crate "nalgebra" as na;
 extern crate ncollide;
 extern crate nphysics;
 extern crate nphysics_testbed3d;
+extern crate rand;
 
-use std::rand;
+use rand::Rand;
 use na::{Pnt3, Vec3, Translation};
 use ncollide::shape::{Plane, Convex};
 use nphysics::world::World;

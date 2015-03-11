@@ -1,7 +1,7 @@
 use std::rc::Rc;
 use std::cell::RefCell;
 use std::collections::HashMap;
-use rand::{SeedableRng, XorShiftRng, Rng};
+use rand::{SeedableRng, XorShiftRng, Rng, Rand};
 use na::{Pnt3, Iso3, Col, Translate};
 use na;
 use kiss3d::window::Window;
@@ -110,7 +110,7 @@ impl GraphicsManager {
         let mut rng: XorShiftRng = SeedableRng::from_seed([0, 2, 4, 8]);
 
         // the first colors are boring.
-        for _ in range(0us, 100) {
+        for _ in 0usize .. 100 {
             let _: Pnt3<f32> = rng.gen();
         }
 

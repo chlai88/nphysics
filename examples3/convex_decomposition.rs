@@ -3,10 +3,11 @@ extern crate "nalgebra" as na;
 extern crate ncollide;
 extern crate nphysics;
 extern crate nphysics_testbed3d;
+extern crate rand;
 
+use rand::Rand;
 use std::thread::Thread;
 use std::sync::{Arc, RwLock};
-use std::rand;
 use na::{Pnt3, Vec3, Translation};
 use kiss3d::loader::obj;
 use ncollide::shape::{Plane, Compound, Convex};

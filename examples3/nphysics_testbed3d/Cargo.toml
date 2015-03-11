@@ -6,6 +6,9 @@ authors = [ "Sébastien Crozet <developer@crozet.re>" ]
 [lib]
 name = "nphysics_testbed3d"
 
+[dependencies]
+rand = "*"
+
 [dependencies.nphysics]
 features = [ "3df32" ]
 path = "../.."
