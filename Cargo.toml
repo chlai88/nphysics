@@ -11,6 +11,9 @@ readme = "README.md"
 keywords = [ "physics", "dynamics", "rigid", "real-time", "joints" ]
 license = "BSD-3-Clause"
 
+[profile.dev]
+debug = false
+
 [features]
 f32 = [ ]
 f64 = [ ]
@@ -31,6 +34,7 @@ path = "src/lib.rs"
 
 [dependencies]
 rustc-serialize = "*"
+rand = "*"
 
 [dependencies.nalgebra]
 git = "https://github.com/sebcrozet/nalgebra"

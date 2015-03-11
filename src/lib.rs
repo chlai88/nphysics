@@ -83,9 +83,9 @@ The libraries needed to compile the examples are:
 #![deny(unused_typecasts)]
 #![warn(non_camel_case_types)]
 #![allow(missing_copy_implementations)]
-#![feature(std_misc)]
-#![feature(rand)]
-#![feature(collections)]
+#![feature(core, std_misc, rand, collections)]
+// #![feature(rand)]
+// #![feature(collections)]
 #![doc(html_root_url = "http://nphysics-dev.org/doc")]
 
 extern crate rand;
